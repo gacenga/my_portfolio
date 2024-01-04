@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gacenga Jimwilly Murimi - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #007bff;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            margin-top: 20px;
+        }
+
+        .profile-picture {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .background-picture {
+            width: 100%;
+            height: auto;
+        }
+	 body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(34, 34, 34, 0.9)), url('path/to/your/background-picture.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Gacenga Jimwilly Murimi</h1>
+        <p>Software Engineering Student at ALX | 3rd Year Economics and Statistics Student at the University of Nairobi</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>A dedicated student specializing in Software Engineering (SWE) and Analytics, fueled by a profound passion for web development and cutting-edge technology. With a focus on driving innovation in Africa, I actively contribute to the advancement of digital solutions. As an advocate for progress, I work to inspire fellow students and professionals alike, fostering a collaborative environment to address technological challenges and elevate the landscape of innovation in Africa Scouts.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Economics - The University of Nairobi</li>
+            <li>Numerical Analysis - The University of Nairobi</li>
+            <li>Data Structures - The University of Nairobi</li>
+            <li>Python (Programming Language) - ALX</li>
+            <li>Problem Solving - ALX</li>
+            <li>Linux - eDaktarie Daktari</li>
+            <li>C (Programming Language) - ALX</li>
+            <li>JavaScript - The University of Nairobi</li>
+            <li>HTML5 - The University of Nairobi</li>
+            <li>HTML - The University of Nairobi</li>
+            <li>Cascading Style Sheets (CSS) - The University of Nairobi</li>
+            <li>Statistical Tools - The University of Nairobi</li>
+            <li>Statistical Data Analysis - The University of Nairobi</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div>
+            <h3>eDaktarie Daktari (Jul 2023 - Present)</h3>
+            <p>Associated with The University of Nairobi</p>
+            <p>A website tailored to provide common health consultation services, connect patients with doctors remotely, and provide lifeline donation platforms for medical emergencies in Nairobi, Kenya.</p>
+            <p>Skills: Data Structures, Problem Solving, JavaScript, HTML5, HTML, Cascading Style Sheets (CSS)</p>
+        </div>
+
+        <div>
+            <h3>Simple Shell</h3>
+            <p>Associated with ALX</p>
+            <p>Created a simple version of a Unix operating system shell that runs normal commands using C programming language.</p>
+            <p>Skills: Data Structures, Linux, C (Programming Language)</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Details</h2>
+        <p>Telephone: +254746952822</p>
+        <p>Email: jimwillymurigu@gmail.com</p>
+        <p>LinkedIn: <a href="www.linkedin.com/in/gacenga-jimwilly-murimi-web-developer">www.linkedin.com/in/gacenga-jimwilly-murimi-web-developer</a></p>
+        <p>Github: <a href="https://github.com/gacenga">https://github.com/gacenga</a></p>
+    </section>
+
+    <!-- Add your profile picture and background picture -->
+    <img src="path/to/your/profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+    <img src="path/to/your/background-picture.jpg" alt="Background Picture" class="background-picture">
+
+    <script>
+        // Smooth scrolling effect
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
